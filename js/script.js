@@ -133,7 +133,7 @@ function tooncake(){
         tekstElement.textContent = 'Goed gedaan de cake ziet er heerlijk uit.';
         partyElement.classList.add('partystart');
         achtergrondElement.classList.add('partyanimation');
-        cla;
+        meisjeImg.classList.add('spring');
         console.log('party start',);
         topPrijs.classList.add('pink');
         console.log('top prijs');

@@ -114,7 +114,7 @@ body {
     background-image: url(../img/feest.png);
 }
 
-button:hover{
+.mousepointer{
     cursor:pointer;
 }
 
