@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: rgb(206, 206, 206);
+    font-size: 36px;
+}
+
+/* herstarten img */
+#herstarten{
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    right: 20px;
+    cursor:pointer;
+}
+
+/* maisje elementen */
+#input{
+    width: 4cm;
+    height: 0.7cm;
+    margin: 20px;
+    font-size: 15px;
+}
+
+#meisje{
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    z-index: 1;
+    cursor:pointer;
+}
+
+#meisje.spring{
+    animation: spring 2s infinite;
+}
+
+@keyframes spring {
+    from{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-100px) ;
+    }
+    50%{
+        transform: translateY(0px) ;
+    }
+    75%{
+        transform: translateY(-100px) ;
+    }
+    to{
+        transform: translateY(0px) ;
+    }
+}
+ 
+#tekst{
+    font-size: 25px;
+    position: absolute;
+    top: 105px;
+    left: 35px;
+    z-index: 2;
+}
+
+#wolk{
+    width: 12cm;
+    height: 2cm;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    z-index: 1;
+}
+
+/* achtergrond elementen */
+#keuken.partyanimation{
+    animation: feest 1s infinite ;
+}
+
+@keyframes feest {
+    from{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(1deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+#keuken{
+    position:relative;
+    background-image: url(../img/keuken.png);
+    width:697px ;
+    height: 626px ;
+    border: 2px solid black;
+    margin: 20px auto;  
+}
+
+#keuken.winkelachtergrond{
+    background-image: url(../img/winkelimg.png);
+}
+
+
+#keuken.feestachtergrond{
+    background-image: url(../img/feest.png);
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+#party{
+    width:697px ;
+    height: 626px ;
+    opacity: 0;
+}
+
+#party.partystart{
+    opacity: 1;
+}
+
+#keukenknop, #winkelknop, #feestknop{
+    width: 60px;
+    height: 25px;
+    position: relative;
+    left: 3.5cm;
+    border-radius: 10px ;
+
+}
+
+/* prijs elementen */
+#prijsbox{
+    position: absolute;
+    top: 4.5cm;
+    left:10px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.748);
+    color: black;
+    border: solid 2px solid;
+    border-radius: 5px;
+}
+
+#prijsbox.pink{
+    background-color: rgba(255, 0, 43, 0.551);
+    color: white;
+}
+
+#prijstekst{
+    font-size: 12px;
+    font-family:cursive ;
+}
+
+#euro{
+    position: absolute ;
+    left: 25px;
+}
+
+#prijs{
+    padding-left: 9px;
+}
+
+/* cake elementen */
+#smaak{
+    font-size: 17px ;
+    background-color: white;
+    padding: 6px;
+    border-radius: 5px;
+    position: absolute;
+    top: 270px;
+    left: 10px;
+}
+
+#vanilla{
+    width: 60px ;
+    position: absolute;
+    top: 315px;
+    left:20px;
+    border: none;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+#choco{
+    width: 60px ;
+    position: absolute;
+    top: 390px;
+    left: 20px;
+
+    border: none;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+#tafel{
+    position: absolute;
+    width: 697px;
+    bottom: -1px;
+    right: 1px;
+    z-index: 2;
+}
+
+#roze-slagroom{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    z-index: 3;
+    cursor:grab;
+}
+
+#aardbei{
+    position: absolute;
+    width: 90px;
+    bottom: 30px;
+    left: 175px;
+    z-index: 3;
+    cursor:grab;
+}
+
+#hartjes{
+    position: absolute;
+    width: 100px;
+    bottom: 35px;
+    left: 310px;
+    z-index: 3;
+    cursor:grab;
+}
+
+#cake{
+    position: absolute;
+    width: 160px;
+    bottom: 20px;
+    right: 87px;
+    z-index: 3;
+}
+
+/* notities elementen */
+#note1{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 136, 0.7);
+    position: absolute;
+    padding: 5px;
+    border-radius: 5px;
+
+    top: 365px;
+    left: 2.5cm;
+    visibility: hidden;
+}
+
+#note1.noteaan1{
+    visibility: visible;
+}
+
+#note2{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 136, 0.7);
+    position: absolute;
+    padding: 5px 8px;
+    border-radius: 5px;
+    z-index: 3;
+    top: 450px;
+    left: 5.4cm;
+    opacity: 0;
+}
+
+#note2.noteaan2{
+    opacity: 1 ;
+}
+
+/* footer */
+footer{
+    font-size: 15px ;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
